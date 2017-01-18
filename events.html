@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Doc Setup</title>
+        <script type="text/javascript">
+            function clickme(){
+                alert("me");
+            }
+            function changeme(){
+                var block = document.getElementById("block");
+                block.src="a.jpg";
+            }
+        </script>
+        
+    </head>
+    <body>
+        <h1>Doc Setup</h1>
+        <p>Sample</p>
+        <a href="#" id="block" onmouseover="changeme()" onclick="clickme()">Click me</a>
+    </body>
+</html>

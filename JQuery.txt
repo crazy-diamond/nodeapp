@@ -1,0 +1,48 @@
+Jquery -
+
+$(document).ready(function(){
+ //all JQuery code goes here
+});
+
+
+$("div") - select all <div> tags
+$("#myDiv") - will select div with id of myDiv
+$("p.someClass") - will select p with class of someClass
+
+$("div").addClass("myClass");
+$("#someClass").css("color","blue");
+var someElement = $("#someElement").html();
+
+Events-
+$("a").click(function(){
+//something when <a tag> is clicked
+});
+
+more event fucntions:
+blur,focus,hover, Key down, Load
+
+show and hide:
+$("#myElement").hide(function(){
+    // do something once hidden
+})
+
+$("#myElement").show(function(){
+    // do something once shown
+})
+
+$("#myElement").toggle(function(){
+    // do something once shown/hidden
+})
+
+$("#myElement").slideDown("fast",function(){
+    
+})
+
+$("#myElement").slideUp("slow",function(){
+    
+})
+
+$("#myElement").slideToggle(1000,function(){
+     
+})
+

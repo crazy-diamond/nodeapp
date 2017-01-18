@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .on{display:none;}
+            .typing{display: none;}
+            .box{background: red;width: 120px;height: 120px;text-align: center;padding: 10px;}
+        </style>
+        <title>
+            test
+        </title>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.box').mouseover(function(){
+                    $('.box').css('background-color','blue');
+                });
+                $('.box').mouseout(function(){
+                    $('.box').css('background-color','red');
+                });
+            });
+        </script>
+        
+        <!--script>
+            $(document).ready(function(){
+                $('select').change(function(){
+                    $('body').css('background-color',this.value);
+                });
+                $('input').focus(function(){
+                    $('span').removeClass('typing');
+                });
+                $('input').blur(function(){
+                    $('span').addClass('typing');
+                });
+            });
+        </script-->
+        
+        
+        <!--script>
+            $(document).ready(function(){
+                $('.off').bind('click',function(){
+                   $('.off').hide(); 
+                    $('.on').show();
+                    $('body').css('background-color','rgb(30,40,80)');
+                });
+                $('.on').on('click',function(){
+                   $('.on').hide(); 
+                    $('.off').show();
+                    $('body').css('background-color','rgb(90,40,10)');
+                });
+            });
+        </script-->
+        
+        
+        <!--script>
+            $(document).ready(function(){
+                $('.off').click(function(){
+                   $('.off').hide(); 
+                    $('.on').show();
+                    $('body').css('background-color','rgb(30,40,80)');
+                });
+                $('.on').click(function(){
+                   $('.on').hide(); 
+                    $('.off').show();
+                    $('body').css('background-color','rgb(90,40,10)');
+                });
+            });
+        </script-->
+        
+        
+    </head>
+    <body>
+        <div class="box">
+            <h2>Hover to change</h2>
+        </div>
+        
+        
+        <!--form>
+            <select>
+                <option value="white">Choose a color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </select>
+            <button>Clear</button>
+            <br />
+            <input type="text" placeholder="Click to focus" />
+            <span class="typing">Start typing...</span>
+        </form-->
+        
+        
+        <!--button class="on">turnon</button>
+        <button class="off">turnoff</button-->
+    </body>
+</html>
